@@ -1,0 +1,23 @@
+Algebraic equation.py :
+We know that the form of a quadratic equation is ax^2 + bx + c = 0 .
+Write a program that, by receiving the coefficients (a, b, c),
+calculates the solutions of the equation.
+
+
+OOP example.py :
+Define a class Animal with a method speak that prints "Animal sound".
+Create a subclass Dog that overrides the speak method to print "Woof!".
+Instantiate an object of Dog and call the speak method.
+
+
+reverse string.py :
+Given a string, ASCII characters along with any character, 
+How would you reverse a string without affecting punctuation characters? 
+Input:   str = "ahmad,bahram$cooki"      Output:  str = "eikoo,cmarha$bdamha"
+
+
+matrix.py :
+Given an (m *  n) integer matrix, if an element is 0, set its entire row and column to 0's.
+ Input:   [[1,2,3],           Output:   [[1,0,3],
+          [4,0,6 ],                      [0,0,0 ],
+          [7,8,9 ]]                      [7,0,9 ]]
