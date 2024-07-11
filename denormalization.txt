@@ -1,0 +1,7 @@
+Denormalization is high-traffic web applicatins involves intentionally
+introducing redudancy into the databse to improve performance.
+
+for example:
+By storing related data in a single tabl,queries can be faster and simpler,
+reducing the need for expensive join operations.
+ 

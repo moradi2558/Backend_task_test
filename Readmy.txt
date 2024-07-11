@@ -21,3 +21,14 @@ Given an (m *  n) integer matrix, if an element is 0, set its entire row and col
  Input:   [[1,2,3],           Output:   [[1,0,3],
           [4,0,6 ],                      [0,0,0 ],
           [7,8,9 ]]                      [7,0,9 ]]
+
+
+
+Denormalization:
+Describe the benefits of denormalization on a high traffic web application. Feel free to use examples
+
+SQL file:
+We have two tables :
+       parents ( id:int , name:string , has_children:boolean default false)
+       children (id:int , name:string , parent_id: foreign key to parents)
+Write a SQL query to update the “has_children” field in the parents table to “false” if a parent has no child.
