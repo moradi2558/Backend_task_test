@@ -1,22 +1,30 @@
-def set_zeroes(matrix):
-    rows = len(matrix)
-    cols = len(matrix[0])
-    
- 
-    zero_positions = [(i, j) for i in range(rows) for j in range(cols) if matrix[i][j] == 0]
-    
+import math
+f,s,g,u,d = 1000000,20,1000000,2,4
+counter = 0
 
-    for i, j in zero_positions:
+if (abs(g-s))%( math.gcd(u,d)) == 0:
+    if (s + u > f) and (s - d <= 0) :
+        print ("imposible")
+    elif (s > g and  d == 0) or (s < g and u == 0):
+        print ("imposible")
+    else:
+        a = 1
+        while a == 1 : 
+            if s == g :
+                print (counter)
+                a = 0 
+            elif s + u > f : 
+                s -= d
+                counter +=1
+            elif s - d < 0 :
+                s += d
+                counter +=1
+            elif s < g:
+                s += u
+                counter +=1
+            elif s > g:
+                s-=d
+                counter =+1
+else: 
+    print ("imposible")
 
-        for col in range(cols):
-            matrix[i][col] = 0
-
-        for row in range(rows):
-            matrix[row][j] = 0
-            
-    return matrix
-
-
-matrix = [[1, 2, 3], [4, 0, 6], [7, 8, 9]]
-output = set_zeroes(matrix)
-print(output) 
